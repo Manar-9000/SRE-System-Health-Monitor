@@ -93,7 +93,7 @@ Running `.\Setup-Monitor.ps1` installs the entire monitoring stack automatically
 The script verifies all files are present, creates the scheduled task, and 
 starts monitoring immediately — all in one command.
 
-<img src="Images/setup_success.png" width="600" alt="Setup script running successfully showing all steps completed">
+<img src="setup_success.png" width="600" alt="Setup script running successfully showing all steps completed">
 
 ---
 
@@ -102,7 +102,7 @@ The log file confirms the monitor is running every 5 minutes automatically
 without any manual intervention. Multiple timestamped health check cycles 
 are visible proving continuous unattended operation.
 
-<img src="Images/health_log.png" width="600" alt="PowerShell showing health log with multiple automated check cycles">
+<img src="health_log.png" width="600" alt="PowerShell showing health log with multiple automated check cycles">
 
 ---
 
@@ -111,7 +111,7 @@ The Task Scheduler GUI confirms `SRE-HealthMonitor` is registered and set
 to repeat every 5 minutes. The task runs under the SYSTEM account meaning 
 it operates even when no user is logged into the server.
 
-<img src="Images/task_scheduler.png" width="600" alt="Windows Task Scheduler showing SRE-HealthMonitor task ready and scheduled">
+<img src="task_scheduler.png" width="600" alt="Windows Task Scheduler showing SRE-HealthMonitor task ready and scheduled">
 
 ---
 
@@ -120,7 +120,7 @@ The DNS service was deliberately stopped to simulate a real outage. The
 monitor instantly flagged it as CRITICAL while all other services continued 
 reporting healthy — isolating the exact failing component.
 
-<img src="Images/dns_failure_and_recovery.png" width="600" alt="PowerShell showing DNS CRITICAL alert followed by successful recovery confirmation">
+<img src="dns_failure_and_recovery.png" width="600" alt="PowerShell showing DNS CRITICAL alert followed by successful recovery confirmation">
 
 The complete incident timeline:
 
