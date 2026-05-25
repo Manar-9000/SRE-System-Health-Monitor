@@ -120,7 +120,7 @@ The DNS service was deliberately stopped to simulate a real outage. The
 monitor instantly flagged it as CRITICAL while all other services continued 
 reporting healthy — isolating the exact failing component.
 
-<img src="dns_failure_and_recovery.png" width="600" alt="PowerShell showing DNS CRITICAL alert followed by successful recovery confirmation">
+<img src="dns_failure_detected.png" width="600" alt="PowerShell showing DNS CRITICAL alert followed by successful recovery confirmation">
 
 The complete incident timeline:
 
